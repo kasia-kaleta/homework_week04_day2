@@ -22,3 +22,7 @@ get '/check_win/:hand1/:hand2' do
   @game = RPSGame.check_win(hand1, hand2)
   erb(:result)
 end
+
+get '/welcome' do
+  erb(:welcome)
+end
